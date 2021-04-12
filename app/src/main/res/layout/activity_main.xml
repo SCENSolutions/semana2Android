@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="546dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/nombreText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nombre"
+            android:inputType="textPersonName" />
+
+        <DatePicker
+            android:id="@+id/fecha"
+            android:layout_width="match_parent"
+            android:layout_height="219dp" />
+
+        <EditText
+            android:id="@+id/numeroTexto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Telefono"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/correoText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Correo"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/descripcionText"
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Descripcion"
+            android:inputType="textMultiLine" />
+
+    </LinearLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Note: A RecyclerView can also be used -->
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomAppBar"
+            style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:backgroundTint="@color/colorAccent"
+            app:contentInsetStart="0dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/siguienteBoton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent"
+                android:onClick="vistaSiguiente"
+                android:text="@string/siguiente"
+                app:backgroundTint="@color/colorAccent"
+                app:iconTint="@color/colorAccent">
+
+            </com.google.android.material.button.MaterialButton>
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menu_superior_opcion1">Acerca De</string>
+    <string name="menu_superior_opcion2">Configuracion</string>
+    <string name="siguiente">Siguiente</string>
+</resources>
