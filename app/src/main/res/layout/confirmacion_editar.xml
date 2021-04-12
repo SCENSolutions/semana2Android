@@ -38,12 +38,6 @@
             android:text="TextView" />
 
         <TextView
-            android:id="@+id/viewTelefono"
-            android:layout_width="match_parent"
-            android:layout_height="49dp"
-            android:text="TextView" />
-
-        <TextView
             android:id="@+id/viewCorreo"
             android:layout_width="match_parent"
             android:layout_height="49dp"
